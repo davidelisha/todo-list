@@ -4,6 +4,7 @@ const TodoList = ({ todos, setTodos }) => {
   const handleDelete = ({ id }) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
+  
   return (
     <div>
       {todos.map((todo) => (
@@ -15,17 +16,17 @@ const TodoList = ({ todos, setTodos }) => {
             onChange={(event) => event.preventDefault()}
           />
           <div>
-            <button className="button-complete task-button">
+            {/* <button className="button-complete-task-button">
               <i classname="fa fa-check-stop"></i>
             </button>
-            <button className="button-edit task-button">
-              <i classname="fa fa-edit"></i>
-            </button>
+            <button className="button-edit-task-button">
+              <i classname="far fa-edit"></i>
+            </button> */}
             <button
-              className="button-delete task-button"
+              className="button-delete"
               onClick={() => handleDelete(todo)}
             >
-              <i classname="fa fa-trash"></i>
+              <div class="delete">X</div>
             </button>
           </div>
         </li>

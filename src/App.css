@@ -54,7 +54,7 @@
   padding: 10px;
   max-height: 30px;
 }
-.button-complete,
+/* .button-complete,
 .button-delete,
 .button-edit {
   border: none;
@@ -63,7 +63,7 @@
   background-color: transparent;
   font-size: 28px;
   border-radius: 50px;
-}
+} */
 .button-complete {
   color: #ff6c6c;
   margin-right: 10px;
@@ -72,9 +72,9 @@
   color: #e2d029;
   margin-right: 10px;
 }
-.button-delete {
+/* .button-delete {
   color: lightseagreen;
-}
+} */
 .complete {
   text-decoration-style: solid;
   text-decoration-line: line-through;
@@ -93,4 +93,15 @@
 input:focus,
 button:focus {
   outline: none;
+}
+
+.button-delete {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  color: rgb(241, 10, 10);
+  display: flex;
+  text-align: right;
+  margin-left: 3em;
 }
